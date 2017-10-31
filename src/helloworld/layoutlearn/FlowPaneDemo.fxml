@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<!--FlowPane感觉像HBox和VBox的综合体，FlowPane可以设置一个方向水平或者垂直。
+默认方向为水平，那么放入FlowPane中的控件会先水平排列，如果第一行满了以后进入下一行继续水平排列。
+垂直方向类似的，先垂直排列，如果第一列满了以后进入第二列继续垂直排列-->
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button mnemonicParsing="false" prefHeight="149.0" prefWidth="55.0" text="Button"/>
+        <Button mnemonicParsing="false" text="Button"/>
+        <Button mnemonicParsing="false" prefHeight="125.0" prefWidth="100.0" text="Button"/>
+        <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="55.0" text="Button"/>
+        <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="102.0" text="Button"/>
+        <Button mnemonicParsing="false" prefHeight="112.0" prefWidth="213.0" text="Button"/>
+        <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="104.0" text="Button"/>
+    </children>
+</FlowPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--        我们在ScrollPane中放置一个TextArea文本域控件，并且设置TextArea的大小大于ScrollPane的大小，
+这样就可以显示出水平和垂直滚动条了
+        ScrollPane顾名思义就是可以显示滚动条的容器控件了。-->
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <TextArea prefHeight="600.0" prefWidth="500.0"/>
+    </content>
+</ScrollPane>

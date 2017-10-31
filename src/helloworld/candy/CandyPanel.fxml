@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.stage.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="455.0" prefWidth="743.0" stylesheets="@candyStyle.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloworld.candy.CandyController">
+    <top>
+        <MenuBar prefHeight="0.0" prefWidth="786.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="功能">
+                    <items>
+                        <MenuItem fx:id="excelSplit" mnemonicParsing="false" text="拆分excel"/>
+                        <MenuItem fx:id="markWrongData" mnemonicParsing="false" text="标记异常数据"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                        <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#closeTheWindow" text="Exit"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="528.0" prefWidth="685.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="67.0" layoutY="70.0" text="选择原始文件：">
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="sourceFileLoc" layoutX="179.0" layoutY="70" prefWidth="360.0"/>
+                <Button fx:id="chooseSourceFileBtn" layoutX="551.0" layoutY="70.0" mnemonicParsing="false"
+                        onAction="#chooseSourceFile" text="选择">
+                    <font>
+                        <Font name="Microsoft YaHei" size="11.0"/>
+                    </font>
+                </Button>
+
+                <Label layoutX="67.0" layoutY="120.0" text="按照第几列拆分：">
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="splitColumn" layoutX="179.0" layoutY="118.0"/>
+                <CheckBox  fx:id="headerCheck" layoutX="461.0" layoutY="120.0" mnemonicParsing="false" text="第一行为标题" selected="true">
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </CheckBox>
+
+
+                <Label layoutX="67.0" layoutY="170.0" text="选择输出目录：">
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="resultFolderLoc" layoutX="179.0" layoutY="168.0" prefWidth="360.0"/>
+                <Button fx:id="chooseResultFolderBtn" layoutX="551.0" layoutY="168.0" mnemonicParsing="false" text="选择"
+                        onAction="#chooseResultFolder">
+                    <font>
+                        <Font name="Microsoft YaHei" size="11.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="509.0" layoutY="327.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="84.0"
+                        text="Start" onAction="#startSplit">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+
+                <Label layoutX="72.0" layoutY="220.0" prefHeight="26.0" prefWidth="51.0" text="Note : ">
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <TextArea fx:id="note" layoutX="179.0" layoutY="215.0" prefHeight="77.0" prefWidth="414.0"/>
+
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

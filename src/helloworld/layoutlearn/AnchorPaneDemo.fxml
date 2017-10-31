@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<!--AnchorPane可以设置一个控件的Anchor位置，感觉NET的GUI控件中最早提供这种控件的。
+比如说我们要将一个Button放置在左下角，离右边100px，离下边100px的位置，
+我们便可以使用AnchorPane控件。当窗口放大缩小的时候，该Button始终在左下角离右边100px，离下边100px的位置。
+通俗地说，AnchorPane可以将控件锚定到布局面板的某个位置。-->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button layoutX="174.0" layoutY="177.0" mnemonicParsing="false" text="右下" AnchorPane.bottomAnchor="100.0"
+                AnchorPane.rightAnchor="100.0"/>
+        <Button layoutX="106.0" layoutY="63.0" mnemonicParsing="false" text="左上" AnchorPane.leftAnchor="100.0"
+                AnchorPane.topAnchor="100.0"/>
+    </children>
+</AnchorPane>

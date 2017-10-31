@@ -1,0 +1,18 @@
+.root {
+    -fx-font-family: "微软雅黑";
+    -fx-font-size: 16px;
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+
+.custom-button {
+    -fx-font: 16px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "微软雅黑";
+    -fx-opacity: 0.9;
+}

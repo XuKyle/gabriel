@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--VBox类似的，垂直排列控件，不换列-->
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Button1" />
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Button2" />
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Button3" />
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Button4" />
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Button5" />
+    </children>
+</VBox>
